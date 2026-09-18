@@ -1,0 +1,1 @@
+CREATE DATABASE StudentNumber_DATA6222_ExamQ1;
