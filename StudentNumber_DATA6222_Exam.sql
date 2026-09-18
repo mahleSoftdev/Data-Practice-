@@ -5,3 +5,9 @@ CREATE TABLE Student (
 	StudentName VARCHAR(50),
 	StudentCell VARCHAR(10)
 );
+
+CREATE TABLE TUTOR(
+	TUTOR_ID INT PRIMARY KEY,
+	TutorName VARCHAR(100),
+	TutorAddress VARCHAR(100)
+)
