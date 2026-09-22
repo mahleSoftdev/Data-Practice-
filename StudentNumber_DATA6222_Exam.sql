@@ -5,12 +5,25 @@ CREATE TABLE Student (
 	StudentName VARCHAR(50),
 	StudentCell VARCHAR(10)
 );
+--Alter student table 
+ALTER TABLE Student 
+ALTER COLUMN StudentCell VARCHAR(15);
+--insertion of values 
+INSERT INTO Student(STUDENT_ID, StudentName, StudentCell)
+VALUES
+(123456, 'Neo Petlele', '076 897 8657'),
+(246810, 'Derek Moore', '083 159 5753'),
+(369121, 'Pedro Ntaba', '082 357 8963'),
+(654321, 'Thabo Joe', '071 134 6798'),
+(987654, 'Dominique Woolridge', '084 713 9852');
+
 
 CREATE TABLE TUTOR(
 	TUTOR_ID INT PRIMARY KEY,
 	TutorName VARCHAR(100),
 	TutorAddress VARCHAR(100)
-)
+);
+
 
 CREATE TABLE TUTOR_BOOKINGS(
 	BOOKING_DATE DATE PRIMARY KEY,
@@ -22,4 +35,5 @@ CREATE TABLE TUTOR_BOOKINGS(
 	-- Adding foreien keys.
 	FOREIGN KEY (STUDENT_ID) REFERENCES STUDENT(STUDENT_ID),
 	FOREIGN KEY (TUTOR_ID) REFERENCES TUTOR(TUTOR_ID)
-)
+);
+
