@@ -24,6 +24,15 @@ CREATE TABLE TUTOR(
 	TutorAddress VARCHAR(100)
 );
 
+--insertion of values into tutor table 
+INSERT INTO TUTOR(TUTOR_ID, TutorName, TutorAddress)
+VALUES 
+(1, 'Theo Sithole', '12 Radar drive, Durban'),
+(2, 'Yanga Mabiso', '116 Clearwater Road, Tshwane'),
+(3, 'Sally Sutton', '1 Waterstone Drive, Sandton'),
+(4, 'Fred Dlamini', '2 Ring Road, Gqeberha'),
+(5, 'Tandy Marais','1 Belmont Road, Cape Town');
+
 
 CREATE TABLE TUTOR_BOOKINGS(
 	BOOKING_DATE DATE PRIMARY KEY,
